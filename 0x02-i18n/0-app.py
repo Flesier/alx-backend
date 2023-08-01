@@ -9,7 +9,7 @@ app.config['LANGUAGES'] = {
 }
 
 #set language to english
-@babel.localselector
+@babel.localeselector
 def get_locale():
     return 'en'
 
