@@ -8,7 +8,9 @@ babel = Babel(app)
 
 
 class Config(object):
-    """ Configuration Class for Babel """
+    """ Configuration Class for Babel 
+        to parametrize your templates.
+    """
 
     LANGUAGES = ['en', 'fr']
     BABEL_DEFAULT_LOCALE = 'en'
@@ -20,7 +22,9 @@ app.config.from_object(Config)
 
 @app.route('/', methods=['GET'], strict_slashes=False)
 def hello_world() -> str:
-    """Renders a Basic Template for Babel Implementation"""
+    """Renders a Basic Template for Babel Implementation
+        Use the message IDs home_title and home_header.
+    """
     return render_template("3-index.html")
 
 
