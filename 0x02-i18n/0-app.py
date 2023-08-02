@@ -15,3 +15,7 @@ def hello_world() -> str:
 
 if __name__ == "__main__":
     app.run()
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 7814c60ca13375633b373bb5785ab645ae47470e
